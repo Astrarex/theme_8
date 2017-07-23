@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Starter SASS</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/app.css">
+
+  <!-- Fonts Roboto and Poppins-->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500" rel="stylesheet" type="text/css">
+
+  <!-- ScrollReveal-load before core javascript cause it needs to load before the markup-->
+  <script src="bower_components\scrollreveal\dist\scrollreveal.min.js"></script>
+
+</head>
+
+<body>
+
+
+  <nav class="navbar">
+    <div class="container">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">
+            <img alt="Brand" src="img/psd2/Logo.png">
+          </a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              <img alt="Brand" src="img/psd2/menu.png">
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.container-fluid -->
+      <div class="navbar2container">
+        <h1>HELLO</h1>
+        <h2>WE ARE ONLINE CLINIC</h2>
+      </div>
+    </div>
+  </nav>
+  <div class="clear"></div>
+  <div class="section2">
+    <div class="container">
+      <div class="aboutus">
+        <h1>ABOUT US</h1>
+        <hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <img src="img/psd2/img1.png" alt="IMG1" id="img1">
+          <p>Lorem ipsum dolor sit amaet</p>
+        </div>
+        <div class="col-md-4">
+          <img src="img/psd2/img2.png" alt="IMG2" id="img2">
+          <p>Lorem ipsum dolor sit amaet</p>
+        </div>
+        <div class="col-md-4">
+          <img src="img/psd2/img3.png" alt="IMG3" id="img3">
+          <p>Lorem ipsum dolor sit amaet</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section3">
+    <div class="container">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+      <img src="img/psd2/browsers.png" alt="">
+    </div>
+  </div>
+
+  <div class="section4">
+    <div class="container">
+      <img src="img/psd2/head-bg.png" alt="" align="middle"  class="headbg">
+      <img src="img/psd2/head-img.png" alt="" align="middle" class="headimg">
+      <h1>Alice G. Mullins</h1>
+      <h2>General Physician</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <ul class="nav nav-pills">
+        <li><a href="#"><img src="img/psd2/active-dot.png" alt="" style="margin-top: 52px;"></a></li>
+        <li><a href="#"><img src="img/psd2/inactive-dot.png" alt=""></a></li>
+        <li><a href="#"><img src="img/psd2/inactive-dot.png" alt=""></a></li>
+      </ul>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!-- SCROLL -->
+  <!-- <div style="height: 10000px;"></div> -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+  <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+  <script src="js/bootstrap.min.js"></script>
+  <!-- SMOOTH SCROLL -->
+  <script>
+  $(function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top - 50   //offset here
+          }, 1000);
+          return false;
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>
